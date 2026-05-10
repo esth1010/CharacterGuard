@@ -17,8 +17,8 @@ class AiClient:
     Tries GeminiClient first. Falls back to OpenRouterClient on 503 or RuntimeError
     """
     def __init__(self):
-        self._gemini = GeminiClient()
-        # self._openrouter = OpenRouterClient()
+        # self._gemini = GeminiClient()
+        self._openrouter = OpenRouterClient()
 
     def call(self, system_prompt: str, user_message: str) -> str:
-        self._gemini.call(system_prompt, user_message)
+        self._openrouter.call(system_prompt, user_message)
