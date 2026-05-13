@@ -36,7 +36,7 @@ Judge categories (from research paper arxiv 2512.01247):
 
 import json
 
-from api_clients.client_factory import AiClient
+from api_clients.gemini_client import GeminiClient as AiClient
 from typing import Optional, List, Dict, Tuple
 
 VALID_CATEGORIES = {
