@@ -198,7 +198,7 @@ class Scorer:
         row_results: list,
         character_description: str,
     ) -> List[str]:
-        from api_clients.client_factory import AiClient
+        from api_clients.gemini_client import GeminiClient as AiClient
 
 
         unsafe_rows = [
